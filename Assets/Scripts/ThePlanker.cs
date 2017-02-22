@@ -58,7 +58,7 @@ public class ThePlanker : MonoBehaviour
             {
                 SpawnTile();
                 scoreCount++;
-                scoreText.text = scoreCount.ToString();
+                scoreText.text = "Score: " + scoreCount.ToString();
             }
             else
             {
