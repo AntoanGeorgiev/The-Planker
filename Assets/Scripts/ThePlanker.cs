@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class ThePlanker : MonoBehaviour
 { 
-    public Text scoreText;
+	public Text scoreText;
     public Color32[] gameColors = new Color32[4];
     public GameObject endPanel;   
     private GameObject[] thePlanker;
@@ -37,6 +37,7 @@ public class ThePlanker : MonoBehaviour
             thePlanker[i] = transform.GetChild(i).gameObject;
 
         plankerIndex = transform.childCount - 1;
+		scoreText.text = "Score: 0";
     }
 
 
